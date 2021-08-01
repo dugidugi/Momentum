@@ -1,0 +1,15 @@
+body {
+  background-color: antiquewhite;
+}
+
+.clicked {
+  color: orange;
+}
+
+.sexyfont {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.hidden {
+  display: none;
+}
