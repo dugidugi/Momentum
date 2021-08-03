@@ -8,14 +8,14 @@
     border-radius: 30px;
 }
 
-#todo-form {
+.todo-form {
     width: 350px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#todo-form input:first-child {
+.todo-form input:first-child {
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     padding: 10px 15px;
@@ -24,21 +24,21 @@
     font-size: 18px;
 }
 
-#todo-form input::placeholder {
+.todo-form input::placeholder {
     font-size: 18px;
 }
 
-#todo-form input:focus {
+.todo-form input:focus {
     outline: none;
 }
 
-#todo-form input:last-child {
+.todo-form input:last-child {
     border: 1px solid black;
     border-radius: 20px;
     padding: 10px 15px;
 }
 
-ul#todo-list {
+ul.todo-list {
     width: 350px;
     list-style-type: none;
     display: flex;
@@ -50,7 +50,7 @@ ul#todo-list {
     border-radius: 15px;
 }
 
-#todo-list li {
+.todo--item {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -60,25 +60,38 @@ ul#todo-list {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#todo-list li input {
+.todo-list li input {
     width: 5%;
 }
 
-#todo-list li span {
+.todo-list li span {
     width: 85%;
 }
 
-#todo-list li button {
+.todo-list li button {
     width: 10%;
 }
 
-#todo-list li span {
+.todo-list li span {
     padding-left: 5px;
     padding-right: 10px;
+}
+
+input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #bcbcbc;
+    cursor: pointer;
+    background: cornflowerblue;
 }
 
 .checked {
     text-decoration: line-through;
     text-decoration-color: rgba(0, 0, 0, 0.5);
     color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.hidden {
+    display: none;
 }
