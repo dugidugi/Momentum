@@ -24,7 +24,7 @@ function geoOk(geoData){
 }
 
 function geoError(){
-    // alert("날씨 제공이 불가능해요");
+    alert("날씨 제공이 불가능해요");
 }
 
 navigator.geolocation.getCurrentPosition(geoOk, geoError);
