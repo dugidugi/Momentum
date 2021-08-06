@@ -12,13 +12,13 @@ function geoOk(geoData){
     .then(data => {
         const weather = data.weather[0].main;
         const city = data.name;
-        const temp = data.main.temp;
+        const temp = Math.floor(data.main.temp);
         const citySpan = document.querySelector("#weather>span:first-child");
         const weatherSpan = document.querySelector("#weather>span:last-child");
         
         citySpan.innerText = city;
         
-        weatherSpan.innerText = `  |  ${temp},  ${weather}`;
+        weatherSpan.innerText = `  |  ${temp}'℃,  ${weather}`;
         
     })
 }
